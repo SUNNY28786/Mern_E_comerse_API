@@ -4,7 +4,7 @@ import {
   checkout,
   verify,
   getAllPayments
-} from "../Controllers/payment.js";
+} from "../Controllers/Payment.js";
 
 import {
   Authenticated,
@@ -23,8 +23,10 @@ router.post(
   Authenticated,
   verify
 );
+
 router.get(
   "/all",
   getAllPayments
 );
+
 export default router;
