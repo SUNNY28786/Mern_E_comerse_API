@@ -59,7 +59,9 @@ app.use('/api/payment',paymentRouter)
 
 
 mongoose
-  .connect("mongodb://localhost:27017/Ecomerse")
+  .connect("mongodb+srv://sy4741091_db_user:Ecom12345Test@cluster0.sf7ndvs.mongodb.net/", {
+    dbName:"SHOPPING"
+  })
   .then(() => console.log("MongoDB Connected Successfully"))
   .catch((err) => console.log("MongoDB Connection Error:", err));
 
@@ -70,7 +72,9 @@ app.listen(port, () =>
 );
 
 
+// db username  sy4741091_db_user
+//db password  orgWxz1up1TMgZ3Ls
 
 
-
-
+//mongodb+srv://sy4741091_db_user:<db_password>@cluster0.sf7ndvs.mongodb.net/
+//mongodb+srv://sy4741091_db_user:<db_password>@cluster0.sf7ndvs.mongodb.net/
