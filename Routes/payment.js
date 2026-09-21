@@ -4,7 +4,7 @@ import {
   checkout,
   verify,
   getAllPayments
-} from "../Controllers/Payment.js";
+} from "../Controllers/payment.js";
 
 import {
   Authenticated,
